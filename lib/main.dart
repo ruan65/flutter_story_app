@@ -125,6 +125,73 @@ class _MyAppState extends State<MyApp> {
                   ),
                 )
               ],
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Favourite',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 40,
+                        fontFamily: 'Calibre-Semibold',
+                        letterSpacing: 1),
+                  ),
+                  IconButton(
+                    icon: Icon(
+                      CustomIcons.option,
+                      size: 12,
+                      color: Colors.white,
+                    ),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 20.0),
+              child: Row(
+                children: <Widget>[
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blueAccent,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Center(
+                      child: Padding(
+                        padding:
+                            EdgeInsets.symmetric(horizontal: 22, vertical: 6),
+                        child: Text(
+                          'Latest',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 15),
+                  Text(
+                    '9+ Stories',
+                    style: TextStyle(color: Colors.blueAccent),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 20),
+            Row(
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.only(left: 18.0),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                    'assets/image_02.jpg',
+                    height: 222,
+                    width: 296,
+                  )),
+                )
+              ],
             )
           ],
         ),
@@ -210,11 +277,18 @@ class CardScrollWidget extends StatelessWidget {
                             ),
                             SizedBox(height: 10),
                             Padding(
-                              padding: const EdgeInsets.only(left: 12.0, bottom: 12.0),
+                              padding: const EdgeInsets.only(
+                                  left: 12.0, bottom: 12.0),
                               child: Container(
-                                padding: EdgeInsets.symmetric(horizontal: 22, vertical: 8),
-                                decoration: BoxDecoration(color: Colors.blueAccent, borderRadius: BorderRadius.circular(20)),
-                                child: Text('Read Later', style: TextStyle(color: Colors.white),),
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 22, vertical: 8),
+                                decoration: BoxDecoration(
+                                    color: Colors.blueAccent,
+                                    borderRadius: BorderRadius.circular(20)),
+                                child: Text(
+                                  'Read Later',
+                                  style: TextStyle(color: Colors.white),
+                                ),
                               ),
                             )
                           ],
