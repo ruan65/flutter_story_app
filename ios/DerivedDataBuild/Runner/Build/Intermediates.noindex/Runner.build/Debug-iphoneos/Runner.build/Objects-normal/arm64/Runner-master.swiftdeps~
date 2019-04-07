@@ -1,5 +1,5 @@
 version: "Apple Swift version 4.2.1 (swiftlang-1000.11.42 clang-1000.11.45.1)"
 options: "6cd3d733aca68df40535e87c0db0ec23"
-build_time: [1554632892, 699636000]
+build_time: [1554636458, 930282000]
 inputs:
   "/Users/a/dev/Flutter_apps/stories_app/ios/Runner/AppDelegate.swift": [1547758512, 0]
